@@ -1,0 +1,78 @@
+.expression {
+    display: flex;
+    border: 1px solid lightgray;
+    /* relative so we can absolutely-position delete button */
+    position: relative;
+}
+
+.expression.focused {
+    box-sizing: border-box;
+    border: 2px solid #15418C;
+
+}
+
+.mq-focused {
+    /* remove blue border when a MathQuill input is focused 
+     * (we handle it ourselves with .expression.focused)
+     */
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.expression-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid lightgray;
+    flex: 0 0 50px;
+}
+
+.expression-main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.expression-main.slider {
+    align-items: center;
+}
+
+.expression-main .expression-input {
+    font-size: 1.4em;
+    border: none;
+    align-self: stretch;
+    padding: 10px 30px 10px 10px;
+}
+
+.expression-main .expression-text-input {
+    font-size: 1.05em;
+}
+
+.expression-evaluated {
+    font-size: 1.3em;
+    padding-right: 5px;
+}
+
+.expression-options {
+    list-style: none;
+}
+
+.expression-option {
+    margin-left: 0px;
+}
+
+.MuiIconButton-root.expression-delete {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.expression-new {
+    align-self: center;
+}

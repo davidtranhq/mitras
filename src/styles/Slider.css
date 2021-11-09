@@ -1,0 +1,23 @@
+.slider-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 10px;
+}
+
+.slider-container .slider {
+    margin: 0px 20px;
+}
+
+.slider-controls .slider-control {
+    width: 50px;
+}
+
+.slider-controls {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-around;
+}

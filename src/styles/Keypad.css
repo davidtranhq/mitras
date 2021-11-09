@@ -1,0 +1,59 @@
+.keypad .keypad-show {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.keypad .keypad-hide {
+    position: absolute;
+    bottom: 160px;
+    left: 0px;
+}
+
+.keypad .keypad-drawer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    background-color: #ededed;
+}
+
+.keypad-group {
+    display: grid;
+    row-gap: 10px;
+    column-gap: 5px;
+    padding: 10px 30px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+}
+
+.matrix-buttons {
+    /* shrink TeX font for matrices so they fit */
+    font-size: 0.5em;
+}
+
+/* disable visual changes when clicking on an entry in a matrix on a button */
+.matrix-buttons td.mq-hasCursor {
+    background: #ccc;
+}
+
+.mq-editable-field.mq-focused,
+.mq-math-mode .mq-editable-field.mq-focused
+{
+    outline: none;
+    box-shadow: none;
+}
+
+.tex-button 
+{
+    background: linear-gradient(#fff, #fafafa);
+    border: 1px solid #d8d8d8;
+    border-radius: 2px;
+    font-size: 1.3em;
+    width: 6vw;
+}
+
+.tex-button:hover
+{
+    background: #f5f5f5;
+}

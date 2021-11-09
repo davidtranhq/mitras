@@ -1,0 +1,48 @@
+.sidebar {
+    position: relative;
+    border-right: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.show-sidebar {
+    position: absolute;
+    top: 10px;
+    left: 24px;
+    width: 20px;
+    height: 20px;
+}
+
+.hide-sidebar {
+    transform: rotate(180deg);
+}
+
+.sidebar-contents {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-bottom: 50px;
+}
+
+.toolbar {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    background: linear-gradient(#fcfcfc, #eaeaea);
+    align-items: center;
+}
+
+.resizer {
+    cursor: ew-resize;
+    width: 15px;
+    /* position the grabber to the right of the sidebar without taking up space */
+    position: relative;
+    right: -10px;
+    margin-left: -15px;
+    z-index: 1;
+}
+
+.resizer:hover {
+    cursor: ew-resize;
+}
