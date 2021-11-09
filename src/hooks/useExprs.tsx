@@ -174,9 +174,9 @@ export default function useExprs() {
    */
   function evaluateExprs() {
     let scope: MathScope = {};
-    setExprs((prevExprs) => {
-      const evaluatedExprs = [...prevExprs];
-      prevExprs.forEach((exprData, idx) => {
+    function evaluateOnce(exprsToEvaluate: ExprData[]) {
+      const evaluatedExprs = [...exprsToEvaluate];
+      exprsToEvaluate.forEach((exprData, idx) => {
         // do not evaluate the expression if it is a comment
         if (exprData.type === 'string') {
           return;
@@ -187,6 +187,11 @@ export default function useExprs() {
         evaluatedExprs[idx] = { ...exprData, ...analysis };
       });
       return evaluatedExprs;
+    }
+    setExprs((prevExprs) => {
+      // we evaluate twice: first pass-through to get variables in scope
+      const firstExprs = evaluateOnce(prevExprs);
+      return evaluateOnce(firstExprs);
     });
   }
 
