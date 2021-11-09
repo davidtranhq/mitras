@@ -4,7 +4,7 @@
 
 [Mitras | Linear Algebra Graphing Calculator](https://davidtranhq.github.io/mitras)
 
-*mitras* is an online graphing calculator for 2D vectors and matrices. It supports calculations for n-dimensional vectors, matrices and their related operations, including eigenvalues, eigenvectors, determinants, transposes, inverses, cross products, projections, and more.
+*mitras* is an online graphing calculator for 2D vectors and matrices. It supports calculations for n-dimensional vectors, matrices, and their related operations, including eigenvalues, eigenvectors, determinants, transposes, inverses, cross products, projections, and more.
 
 Access it at [davidtranhq.github.io/mitras](https://davidtranhq.github.io/mitras).
 
