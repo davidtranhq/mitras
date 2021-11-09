@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mitras/static/css/main.97777ebf.chunk.css",
-    "main.js": "/mitras/static/js/main.d83e300b.chunk.js",
-    "main.js.map": "/mitras/static/js/main.d83e300b.chunk.js.map",
+    "main.js": "/mitras/static/js/main.233be4b4.chunk.js",
+    "main.js.map": "/mitras/static/js/main.233be4b4.chunk.js.map",
     "runtime-main.js": "/mitras/static/js/runtime-main.bbc1f25f.js",
     "runtime-main.js.map": "/mitras/static/js/runtime-main.bbc1f25f.js.map",
     "static/css/2.1544d75d.chunk.css": "/mitras/static/css/2.1544d75d.chunk.css",
@@ -12,13 +12,13 @@
     "static/css/2.1544d75d.chunk.css.map": "/mitras/static/css/2.1544d75d.chunk.css.map",
     "static/css/main.97777ebf.chunk.css.map": "/mitras/static/css/main.97777ebf.chunk.css.map",
     "static/js/2.0a3b07a6.chunk.js.LICENSE.txt": "/mitras/static/js/2.0a3b07a6.chunk.js.LICENSE.txt",
-    "static/media/logo.3d29e8e1.svg": "/mitras/static/media/logo.3d29e8e1.svg"
+    "static/media/logo.aae61ab1.svg": "/mitras/static/media/logo.aae61ab1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.bbc1f25f.js",
     "static/css/2.1544d75d.chunk.css",
     "static/js/2.0a3b07a6.chunk.js",
     "static/css/main.97777ebf.chunk.css",
-    "static/js/main.d83e300b.chunk.js"
+    "static/js/main.233be4b4.chunk.js"
   ]
 }
