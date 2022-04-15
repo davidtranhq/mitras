@@ -8,17 +8,10 @@ import ExprList from 'components/ExprList';
 import NewExpression from 'components/NewExpression';
 import Keypad from 'components/Keypad';
 import GraphControls from 'components/GraphControls';
-/* DEPRECATED: Graph options
-import GraphOptions from 'components/GraphOptions';
-*/
 
 import useWindowSize from 'hooks/useWindowSize';
 import useDraggablePosition from 'hooks/useDraggablePosition';
 import useExprs from 'hooks/useExprs';
-
-/* DEPRECATED: Graph options
-import { DrawOptions } from 'utils/draw';
-*/
 
 import 'styles/App.css';
 import 'react-resizable/css/styles.css';
@@ -83,25 +76,6 @@ function App() {
 
   // Insert a TeX expression at the cursor into the expression that currently has focus.
   const insertTexInFocused = (tex: string) => insertTex(focusedID, tex);
-
-  /* DEPRECATED: Graph options
-  const graphOptionsButtons = (
-    <GraphOptions
-      currentOptions={currentGraphOptions}
-      centerGraph={centerGraph}
-      setGraphOptions={setGraphOptions}
-    />
-  );
-
-  const currentGraphOptions = canvasRef.current?.currentOptions;
-
-  // Adjust draw options on the graph (color, toggle coordinates, toggle minor lines)
-  const setGraphOptions = (options: Partial<DrawOptions>) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    canvas.setOptions(options);
-  };
-  */
 
   // Center the graph at the origin.
   const centerGraph = () => {
